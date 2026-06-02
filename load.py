@@ -13,4 +13,3 @@ def load_emails(path=DATA_PATH):
     data['label'] = data['label'].map(LABEL_NAMES) # change 0 to legitimate and 1 to phishing
     emails = data[['text', 'label']]
     return emails
-print(load_emails())
