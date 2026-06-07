@@ -7,7 +7,8 @@ def vectorize():
     ->(this word is important for this email)
     so when classifier will use this words and their numbers with labels it will learn to identify which words
     are identificators of phising emails or legitimate emails
-
+    features - tokens(words) with their importance for email
+    stop_words to remove common words
     """
     vectorizer = TfidfVectorizer(max_features=3000, stop_words="english")
     return vectorizer
